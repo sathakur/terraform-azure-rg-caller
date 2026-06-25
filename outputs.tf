@@ -1,14 +1,14 @@
 output "resource_group_name" {
   description = "Created Resource Group name."
-  value       = azurerm_resource_group.this.name
+  value       = module.resource_group.resource_group_name
 }
 
 output "resource_group_location" {
   description = "Created Resource Group location."
-  value       = azurerm_resource_group.this.location
+  value       = module.resource_group.resource_group_location
 }
 
 output "resource_group_id" {
   description = "Created Resource Group resource ID."
-  value       = azurerm_resource_group.this.id
+  value       = module.resource_group.resource_group_id
 }
