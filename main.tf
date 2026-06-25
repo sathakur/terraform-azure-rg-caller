@@ -15,7 +15,7 @@ provider "azurerm" {
 
 module "resource_group" {
   # Update this source URL if your GitHub owner/repo name is different.
-  source = "git::https://github.com/sathakur/terraform-azure-rg-module.git?ref=main"
+  source = "git:https://github.com/sathakur/terraform-azure-rg-module.git?ref=main"
 
   # These two values must come from StackGuardian Dev Portal inputs.
   resource_group_name = var.resource_group_name
